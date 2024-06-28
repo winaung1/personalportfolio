@@ -22,7 +22,7 @@
 
 .slider {
 
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 10px 20px -5px rgba(10, 10, 10, 0.125);
   height: 100px;
   margin: auto;
   overflow: hidden;
@@ -32,7 +32,7 @@
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, rgb(4, 4, 4) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgb(10, 10, 10) 0%, rgba(10, 10, 10, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;
@@ -65,5 +65,19 @@
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+}
+
+body{
+  background-color: #090909;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #00b09b, #96c93d); /* Green gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-background {
+  background: linear-gradient(to right, #00b09b, #96c93d); /* Green gradient colors */
 }
 
