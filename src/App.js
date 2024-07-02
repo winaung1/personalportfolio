@@ -1,28 +1,24 @@
+import "./App.css";
 
-import './App.css';
-import { About } from './components/About';
-import { Experience } from './components/Experience';
-import { Hero } from './components/Hero';
-import { Navbar } from './components/Navbar';
-import { Projects } from './components/Projects';
-import { Skills } from './components/Skills';
-import SwiperComponent from './components/SwiperComponent';
-import { slides, projects} from './components/data';
+import Footer from "./components/Footer";
+import { Navbar } from "./components/Navbar";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Contact } from "./pages/Contact";
 
 function App() {
- 
   return (
     <div className="App bg-[#090909] text-white">
-      <div className='max-w-7xl mx-auto'>
-
-      <Navbar/>
-      <Hero/>
-      <SwiperComponent items={slides}/>
-      <Projects/>
-      <SwiperComponent items={projects}/>
-      <About/>
-      <Experience/>
-      <Skills/>
+      <div className="max-w-7xl mx-auto">
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/contact"} element={<Contact />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
       </div>
     </div>
   );
