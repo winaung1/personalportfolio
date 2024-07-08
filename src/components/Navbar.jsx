@@ -31,8 +31,7 @@ export const Navbar = () => {
         <MdArrowOutward className="gradient-background text-black p-2 text-4xl rounded-full" />
       </a>
   
-      {showMenu && (
-        <div className="mobile-menu transition-all duration-300 ease-in-out absolute top-20 text-center lg:hidden bg-[#090909] w-full p-4 z-[6000]">
+        <div className={showMenu ? "mobile-menu drop-shadow-md transition-all duration-300 ease-in-out absolute left-0 top-20 text-center lg:hidden bg-[#090909] w-full p-4 z-[6000] border-b" : "mobile-menu border-b drop-shadow-md transition-all duration-300 ease-in-out absolute top-20 -left-[1200px] text-center lg:hidden bg-[#090909] w-full p-4 z-[6000]"}>
           <ul className=" opacity-80">
             <li className="cursor-pointer hover:text-gray-200" onClick={handleScroll}>
               Work
@@ -45,7 +44,6 @@ export const Navbar = () => {
             <MdArrowOutward className="gradient-background text-black p-2 text-4xl rounded-full" />
           </a>
         </div>
-      )}
     </div>
   );
 };
