@@ -5,7 +5,7 @@ import { Title } from "./Title";
 
 export const Projects = ({setDisplayText}) => {
   return (
-    <div id="projects-section" className="py-10 px-4">
+    <div id="work" className="py-10 px-4">
       <Title title={"Our work."} />
       <ProjectCard
       setDisplayText={setDisplayText}

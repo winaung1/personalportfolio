@@ -42,13 +42,17 @@ export const Process = () => {
   ];
 
   return (
-    <div className="my-20 px-4">
+    <div className="my-20 px-4" id="process">
       <Title title="Our Process" />
       <p className="opacity-60 py-2 pb-4">Our process to achieve your goals</p>
 
       <div className="grid md:grid-cols-2 gap-4">
         {steps.map((step) => (
-          <div key={step.id} className="border border-[#3d3d3d] rounded-xl px-4 py-4">
+          <div data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-delay="300"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine" key={step.id} className="border border-[#3d3d3d] rounded-xl px-4 py-4">
             <div className="text-orange-400 font-semibold text-xl mb-2">0{step.id}</div>
             <h2 className="text-xl font-bold mb-2">{step.title}</h2>
             <ul className="list-disc pl-4">

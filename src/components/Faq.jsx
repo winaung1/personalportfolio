@@ -34,7 +34,7 @@ export const Faq = () => {
   ];
 
   return (
-    <div className="px-4 max-w-3xl mx-auto text-center ">
+    <div className="px-4 max-w-3xl mx-auto text-center " id="faq">
       <h1 className="font-[500] text-[28px] lg:pt-10">
         Frequently Asked Questions
       </h1>

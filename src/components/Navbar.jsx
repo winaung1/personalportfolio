@@ -5,8 +5,8 @@ import { MdArrowOutward } from "react-icons/md";
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const handleScroll = () => {
-    const section = document.getElementById("projects-section");
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -19,9 +19,19 @@ export const Navbar = () => {
       <img className="w-40 h-24 cursor-pointer" src={'https://businessone.vercel.app/bestlogo.png'} alt="" />
       </a>
       <ul className="hidden md:flex items-center space-x-8 opacity-80">
-        <li className="cursor-pointer hover:text-gray-200" onClick={handleScroll}>
-          Work
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('process')}>
+          Our Process
         </li>
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('work')}>
+          Our Work
+        </li>
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('pricing')}>
+          Pricing
+        </li>
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('faq')}>
+          FAQ
+        </li>
+
       </ul>
       <CiMenuFries onClick={() => setShowMenu(!showMenu)} className="md:hidden text-2xl cursor-pointer" />
       <a href="/contact"

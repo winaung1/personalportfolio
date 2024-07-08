@@ -60,7 +60,7 @@ export const Plans = () => {
       ];
       
   return (
-    <div className="my-20 px-4">
+    <div className="my-20 px-4" id='pricing'>
       <Title title={"Our pricing."} />
       <p className='opacity-60 py-2 pb-4'>We are with full transparency, if we agreed on the right price from the start our work will be smooth.</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
