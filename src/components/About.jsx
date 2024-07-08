@@ -10,20 +10,19 @@ export const About = () => {
          
           <div>
             <h1 className="font-semibold text-3xl w-full pt-4 lg:pt-0">
-              Hi, I am Win - I am experienced frontend developer on road to
-              full-stack developement.
+              Hi, I am Win - I am an owner of <span className="gradient-text">Winagencydesigns.</span> Get to know me.
             </h1>
             <div className="py-4">
-              <button className="bg-white text-black px-5 py-3 rounded-full">
+              <a href="/contact" className="my-3 bg-white text-black px-5 py-3 rounded-full">
                 Hire ME
-              </button>
+              </a>
             </div>
           </div>
         </div>
         <div className="opacity-60 lg:w-3/4 lg:pt-8">
           <p>
-            Hello! I'm Win Aung, a frontend developer and freelance professional
-            based in the United States. With over three years of experience in
+            Hello! I'm Win Aung, an owner of Winagencydesigns and freelance professional
+            based in the United States. With years of experience in
             the field, I specialize in creating dynamic and engaging websites
             that leave a lasting impression. My technical expertise spans across
             HTML, CSS, JavaScript, and beyond, enabling me to transform your

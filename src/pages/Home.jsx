@@ -6,17 +6,23 @@ import { About } from '../components/About'
 import { Experience } from '../components/Experience'
 import { Skills } from '../components/Skills'
 import { projects, slides } from '../components/data'
+import { Process } from '../components/Process'
+import { Plans } from '../components/Plans'
+import { Faq } from '../components/Faq'
 
 export const Home = () => {
   return (
     <div>
-          <Hero />
+        <Hero />
         <SwiperComponent items={slides} />
+        <Process/>
         <Projects />
         <SwiperComponent items={projects} />
+        <Plans/>
         <About />
-        <Experience />
-        <Skills />
+        <Faq/>
+        {/* <Experience /> */}
+        {/* <Skills /> */}
     </div>
   )
 }

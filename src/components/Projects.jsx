@@ -6,9 +6,9 @@ import { Title } from "./Title";
 export const Projects = () => {
   return (
     <div id="projects-section" className="py-10 px-4">
-      <Title title={"Recent Projects"} />
+      <Title title={"Our work."} />
       <ProjectCard
-        date={"2020"}
+        date={"2024"}
         header={"Premium UI Kits - Agency/SaaS Website Template"}
         description={
           "Premium UI Kits aim of producing high-quality components that allow designers to create faster and more efficiently."

@@ -16,7 +16,7 @@ export const Navbar = () => {
     <div className="relative flex items-center justify-between pr-4">
       <a href="/">
 
-      <img className="w-40 h-24 cursor-pointer" src={logo} alt="" />
+      <img className="w-40 h-24 cursor-pointer" src={'https://businessone.vercel.app/bestlogo.png'} alt="" />
       </a>
       <ul className="hidden md:flex items-center space-x-8 opacity-80">
         <li className="cursor-pointer hover:text-gray-200" onClick={handleScroll}>

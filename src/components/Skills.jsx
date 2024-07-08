@@ -7,10 +7,10 @@ export const Skills = () => {
       <Title title={"Skills"} />
       <div className="lg:flex justify-between lg:space-x-4">
         <p className="opacity-60 py-4 lg:w-1/2">
-          In my portfolio, I highlight the programs I work with and the
-          programming languages I master. From frontend technologies like HTML,
+          In my portfolio, We highlight the programs we work with and the
+          programming languages we master. From frontend technologies like HTML,
           CSS, and JavaScript to full-stack development with frameworks such as
-          React and Node.js.
+          React and Node.js. 
         </p>
         <div className="flex flex-wrap gap-4">
           {skills.map((skill) => (
