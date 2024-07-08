@@ -15,7 +15,11 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="py-4 lg:py-8">
+      <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-delay="300"
+         data-aos-duration="300"
+     data-aos-easing="ease-in-sine" className="py-4 lg:py-8 ">
         <p className="text-4xl pb-4 lg:pb-8 lg:text-7xl">
           Get a Web Agency who understands the synergy between
           <span className="gradient-text"> design</span> and

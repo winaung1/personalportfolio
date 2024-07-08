@@ -10,13 +10,13 @@ import { Process } from '../components/Process'
 import { Plans } from '../components/Plans'
 import { Faq } from '../components/Faq'
 
-export const Home = () => {
+export const Home = ({setDisplayText}) => {
   return (
     <div>
         <Hero />
         <SwiperComponent items={slides} />
         <Process/>
-        <Projects />
+        <Projects setDisplayText={setDisplayText} />
         <SwiperComponent items={projects} />
         <Plans/>
         <About />

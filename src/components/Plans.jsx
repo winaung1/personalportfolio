@@ -65,7 +65,11 @@ export const Plans = () => {
       <p className='opacity-60 py-2 pb-4'>We are with full transparency, if we agreed on the right price from the start our work will be smooth.</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {pricing.map((price) => (
-          <div className={price.id === 2 ? "pricing-gradient border border-[#3d3d3d] rounded-xl px-4 py-2 h-fit" : "border h-fit border-[#3d3d3d] rounded-xl px-4 py-2"}>
+          <div data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-delay="300"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-out" className={price.id === 2 ? "pricing-gradient border border-[#3d3d3d] rounded-xl px-4 py-2 h-fit" : "border h-fit border-[#3d3d3d] rounded-xl px-4 py-2"}>
             <h1 className='text-orange-400'>{price.title}</h1>
             <p className='py-4 text-4xl'>${price.price}</p>
             <div className="">

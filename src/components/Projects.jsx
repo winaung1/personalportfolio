@@ -3,11 +3,12 @@ import { Greendot } from "./Greendot";
 import { ProjectCard } from "./ProjectCard";
 import { Title } from "./Title";
 
-export const Projects = () => {
+export const Projects = ({setDisplayText}) => {
   return (
     <div id="projects-section" className="py-10 px-4">
       <Title title={"Our work."} />
       <ProjectCard
+      setDisplayText={setDisplayText}
         date={"2024"}
         header={"Premium UI Kits - Agency/SaaS Website Template"}
         description={
@@ -24,6 +25,7 @@ export const Projects = () => {
         img3={"https://www.premiumuikits.com/wp-content/uploads/2023/05/wunder-ui-featured-image.jpg"}
       />
       <ProjectCard
+        setDisplayText={setDisplayText}
         date={"2023"}
         header={"Dreamy - Agency/SaaS Website Templates"}
         description={
