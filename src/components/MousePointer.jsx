@@ -26,7 +26,7 @@ const MousePointer = ({ position, displayText }) => {
     <div className="fixed top-0 left-0 z-50 pointer-events-none">
       {showPointer && (
         <div
-          className="w-5 h-5 bg-orange-500 rounded-full cursor-pointer"
+          className="hidden md:block w-5 h-5 bg-orange-500 rounded-full cursor-pointer"
           style={{
             position: "absolute",
             top: y - 20.5,

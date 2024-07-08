@@ -69,6 +69,7 @@
 
 body{
   background-color: #090909;
+  overflow-x: hidden;
 }
 
 .gradient-text {
