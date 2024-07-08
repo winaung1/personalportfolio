@@ -19,15 +19,15 @@ function App() {
     setPosition({ x: e.clientX, y: e.clientY });
   };
 
-  ReactGA.initialize("UA-XXXXXXXXX-X");
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  // ReactGA.initialize("UA-XXXXXXXXX-X");
+  // ReactGA.pageview(window.location.pathname + window.location.search);
 
 
-  const location = useLocation();
+  // const location = useLocation();
 
-  useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+  // useEffect(() => {
+  //   ReactGA.pageview(location.pathname + location.search);
+  // }, [location]);
 
 
   // Initialize AOS
