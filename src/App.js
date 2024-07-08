@@ -1,22 +1,34 @@
 import "./App.css";
 import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 import Rights from "./components/Rights";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import MousePointer from "./components/MousePointer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ReactGA from "react-ga";
 
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [displayText, setDisplayText] = useState('')
+  const [displayText, setDisplayText] = useState("");
 
   const handleMouseMove = (e) => {
     setPosition({ x: e.clientX, y: e.clientY });
   };
+
+  ReactGA.initialize("UA-XXXXXXXXX-X");
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
+
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+
 
   // Initialize AOS
   AOS.init();
@@ -28,14 +40,17 @@ function App() {
           {/* Render Navbar and Routes */}
           <Navbar />
           <Routes>
-            <Route path={"/"} element={<Home setDisplayText={setDisplayText} />} />
+            <Route
+              path={"/"}
+              element={<Home setDisplayText={setDisplayText} />}
+            />
             <Route path={"/contact"} element={<Contact />} />
           </Routes>
           {/* Render Footer and Rights components */}
           <Footer />
           <Rights />
           {/* Render MousePointer component */}
-          <MousePointer displayText={displayText}  position={position} />
+          <MousePointer displayText={displayText} position={position} />
         </BrowserRouter>
       </div>
     </div>
