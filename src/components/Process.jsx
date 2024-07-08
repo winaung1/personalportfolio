@@ -48,7 +48,7 @@ export const Process = () => {
 
       <div className="grid md:grid-cols-2 gap-4">
         {steps.map((step) => (
-          <div data-aos="fade-up"
+          <div data-aos="zoom-in"
           data-aos-offset="300"
           data-aos-delay="300"
           data-aos-duration="300"
