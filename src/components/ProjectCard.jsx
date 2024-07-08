@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa6'
 
 export const ProjectCard = ({setDisplayText, date, img1, img2, img3, header, description, description2, role, deliverables, company, site}) => {
   return (
-    <div className="lg:flex lg:space-x-8 py-8">
+    <div className="lg:flex lg:space-x-8 py-8 overflow-x-hidden">
         <div className="lg:sticky top-10 h-fit lg:w-[70%]">
             <div className='bg-[#2b2d2d] w-fit p-1 px-2 mb-2 rounded-full'>{date}</div>
             <h1 className='text-4xl pb-2'>{header}</h1>
