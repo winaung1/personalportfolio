@@ -69,7 +69,7 @@ export const ContactForm = () => {
   <input className=' text-gray-200' type="checkbox" id="agree" name="fav_language" value="agree"/>
   <label for="agree">I agree to the Terms & Conditions of Winagencydesigns.</label>
   </div>
-  <button type="submit" class=" transition-all duration-300 ease-linear flex  gap-2  items-center text-white bg-orange-600 hover:bg-white hover:border-2 hover:border-orange-600 hover:text-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-600 font-medium rounded-full w-fit text-xl sm:w-auto px-5 py-5 text-center ">Send your inquiry<FaArrowRight/></button>
+  <button type="submit" class=" transition-all duration-300 ease-linear flex  gap-2  items-center text-white gradient-background hover:bg-white hover:border-2 hover:border-orange-400 hover:text-orange-400 focus:ring-4 focus:outline-none focus:ring-orange-600 font-medium rounded-full w-fit text-xl sm:w-auto px-5 py-5 text-center ">Send your inquiry<FaArrowRight/></button>
 </form>
 
   )
