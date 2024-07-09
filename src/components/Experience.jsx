@@ -3,7 +3,7 @@ import { Title } from "./Title";
 import { experiences } from "./data";
 export const Experience = () => {
   return (
-    <div className="px-4">
+    <div className="px-4" id="experience">
       <Title title={"Work Experience"} />
       <div>
         {experiences.map((experience) => (

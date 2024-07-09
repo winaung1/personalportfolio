@@ -3,7 +3,7 @@ import { Title } from "./Title";
 import { skills } from "./data";
 export const Skills = () => {
   return (
-    <div className="py-20 px-4">
+    <div className="py-20 px-4" id="skills">
       <Title title={"Skills"} />
       <div className="lg:flex justify-between lg:space-x-4">
         <p className="opacity-60 py-4 lg:w-1/2">

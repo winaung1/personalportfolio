@@ -41,12 +41,12 @@ export const Home = ({ setDisplayText }) => {
     <div>
       <Hero />
       <SwiperComponent items={slides} />
-      <Process />
+      {/* <Process /> */}
       <Projects setDisplayText={setDisplayText} />
       <SwiperComponent items={projects} />
-      <Plans />
+      {/* <Plans /> */}
       <About />
-      <Faq />
+      {/* <Faq /> */}
       {showScrollButton && (
         <div className='transition-all duration-300 ease-linear fixed bottom-10 right-10'>
           <FaChevronCircleUp
@@ -55,8 +55,8 @@ export const Home = ({ setDisplayText }) => {
           />
         </div>
       )}
-      {/* <Experience /> */}
-      {/* <Skills /> */}
+      <Experience /> 
+      <Skills />
     </div>
   );
 };

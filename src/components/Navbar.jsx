@@ -19,17 +19,17 @@ export const Navbar = () => {
       <img className="w-40 h-24 cursor-pointer" src={'https://businessone.vercel.app/bestlogo.png'} alt="" />
       </a>
       <ul className="hidden md:flex items-center space-x-8 opacity-80">
-        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('process')}>
-          Our Process
-        </li>
         <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('work')}>
-          Our Work
+          Work
         </li>
-        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('pricing')}>
-          Pricing
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('about')}>
+          About
         </li>
-        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('faq')}>
-          FAQ
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('experience')}>
+          Experience
+        </li>
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('skills')}>
+          Skills
         </li>
 
       </ul>
@@ -42,11 +42,21 @@ export const Navbar = () => {
       </a>
   
         <div className={showMenu ? "mobile-menu drop-shadow-md transition-all duration-300 ease-in-out absolute left-0 top-20 text-center lg:hidden bg-[#090909] w-full p-4 z-[6000]" : "mobile-menu border-b drop-shadow-md transition-all duration-300 ease-in-out absolute top-20 -left-[1200px] text-center lg:hidden bg-[#090909] w-full p-4 z-[6000]"}>
-          <ul className=" opacity-80">
-            <li className="cursor-pointer hover:text-gray-200" onClick={handleScroll}>
-              Work
-            </li>
-          </ul>
+        <ul className="md:hidden flex flex-col gap-4 text-3xl opacity-80">
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('work')}>
+          Work
+        </li>
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('about')}>
+          About
+        </li>
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('experience')}>
+          Experience
+        </li>
+        <li className="cursor-pointer hover:text-gray-200" onClick={() => handleScroll('skills')}>
+          Skills
+        </li>
+
+      </ul>
           <a href="/contact"
             className="hover:bg-white my-4 transition-all cursor-pointer duration-300 ease-in-out hover:text-black flex items-center justify-center w-fit mx-auto space-x-2 bg-[#2b2d2d] p-2 px-4 rounded-full"
           >
