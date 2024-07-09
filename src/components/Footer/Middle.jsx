@@ -12,8 +12,8 @@ export const Middle = () => {
       <div>
         <h1 className="text-xl pb-3">Useful Info</h1>
         <ul className="leading-8 opacity-60">
-          <li>Terms of Service</li>
-          <li>Privacy Policy</li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
           <li>FAQ</li>
           <li>We use cookies</li>
         </ul>

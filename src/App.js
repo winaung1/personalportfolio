@@ -10,6 +10,8 @@ import "aos/dist/aos.css";
 import MousePointer from "./components/MousePointer";
 import { useEffect, useState } from "react";
 import ReactGA from "react-ga";
+import TermsOfServices from "./components/TermsOfServices";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -45,6 +47,8 @@ function App() {
               element={<Home setDisplayText={setDisplayText} />}
             />
             <Route path={"/contact"} element={<Contact />} />
+            <Route path={"/terms-of-service"} element={<TermsOfServices />} />
+            <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
           </Routes>
           {/* Render Footer and Rights components */}
           <Footer />
