@@ -27,7 +27,7 @@ export const Hero = () => {
         </p>
         <p className="opacity-60 text-xl lg:text-2xl md:w-3/4">
           Stop searching for the ideal web agency—We are here. Let's collaborate and
-          create something extraordinary together.
+          create something extraordinary together. We are located in Utah, but we serve everywhere in the world.
         </p>
       </div>
 

@@ -14,9 +14,9 @@ export const Plans = () => {
             '24-Hour Delivery',
             '2 Pages',
             '2 Revisions',
-            'Figma Files',
             'Source Code',
             '$40/Monthly Developer Fees',
+            '"YOU DO NOT OWN THE WEBSITE"'
           ],
         },
         {
@@ -30,12 +30,13 @@ export const Plans = () => {
             '7-Day Delivery',
             '4 Pages',
             '5 Revisions',
-            'Figma Files',
             'Source Code',
             'Hosting',
             'Domain Registration',
             '1 Month Free Support',
-            'One-time Payment'
+            'One-time Payment',
+            '"YOU DO NOT OWN THE WEBSITE"',
+            'No monthly fees'
           ],
         },
         {
@@ -49,12 +50,13 @@ export const Plans = () => {
             '14-Day Delivery',
             '6-7 Pages',
             '7 Revisions',
-            'Figma Files',
             'Source Code',
             '6 Months Free Support',
             'Hosting',
             'Domain Registration',
             '3 Installment Payments',
+            '"YOU OWN THE WEBSITE"',
+            'No monthly fees'
           ],
         },
       ];
