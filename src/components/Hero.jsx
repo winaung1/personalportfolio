@@ -5,7 +5,7 @@ import ScrollAnimation from "./ScrollAnimation";
 
 export const Hero = () => {
   return (
-    <div className="px-4 py-10 relative text-center md:mb-20 h-screen flex flex-col justify-center items-center">
+    <div className="px-4 py-10 relative lg:text-center lg:mb-20 lg:h-screen flex flex-col justify-center items-center">
       <div className="absolute inset-0 z-0 hidden lg:block">
         <div className="space-y-10 absolute top-10 left-10 flex justify-between w-full">
           <div>
@@ -60,8 +60,8 @@ export const Hero = () => {
         <div
           data-aos="fade-right"
           data-aos-offset="300"
-          data-aos-delay="300"
-          data-aos-duration="300"
+          // data-aos-delay="300"
+          // data-aos-duration="300"
           data-aos-easing="ease-in-sine"
           className="py-4 lg:py-8 lg:text-center"
         >
@@ -70,7 +70,7 @@ export const Hero = () => {
             <span className="gradient-text"> design</span> and
             <span className="gradient-text"> development</span>.
           </p>
-          <p className="opacity-60 text-xl lg:text-2xl md:w-3/4 mx-auto">
+          <p className="opacity-60 text-xl lg:text-2xl md:w-3/4 lg:mx-auto">
           Stop searching for the ideal web developer—I am here. Let's collaborate and
           create something extraordinary together.
           </p>

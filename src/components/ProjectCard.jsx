@@ -28,8 +28,8 @@ export const ProjectCard = ({setDisplayText, date, img1, img2, img3, header, des
         </div>
         <div data-aos="zoom-in"
      data-aos-offset="300"
-     data-aos-delay="300"
-     data-aos-duration="300"
+    //  data-aos-delay="300"
+    //  data-aos-duration="300"
      data-aos-easing="ease-in-sine" className='lg:w-3/4'>
             <img src={img1} alt="" />
             <img className='my-4' src={img2} alt="" />

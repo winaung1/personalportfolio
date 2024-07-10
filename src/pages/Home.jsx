@@ -47,7 +47,7 @@ export const Home = ({ setDisplayText }) => {
       <About />
       {/* <Faq /> */}
       {showScrollButton && (
-        <div className='transition-all duration-300 ease-linear fixed bottom-10 right-10'>
+        <div className='transition-all z-[8000] duration-300 ease-linear fixed bottom-10 right-10'>
           <FaChevronCircleUp
             className='text-4xl text-orange-500 hover:text-orange-400 cursor-pointer'
             onClick={scrollToTop}
