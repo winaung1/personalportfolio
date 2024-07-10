@@ -13,7 +13,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-between pr-4">
+    <div className="relative flex items-center justify-between pr-4 z-[6000]">
       <a href="/">
 
       <img className="w-40 h-24 cursor-pointer" src={'https://businessone.vercel.app/bestlogo.png'} alt="" />

@@ -40,7 +40,6 @@ export const Home = ({ setDisplayText }) => {
   return (
     <div>
       <Hero />
-      <SwiperComponent items={slides} />
       {/* <Process /> */}
       <Projects setDisplayText={setDisplayText} />
       <SwiperComponent items={projects} />
@@ -57,6 +56,7 @@ export const Home = ({ setDisplayText }) => {
       )}
       <Experience /> 
       <Skills />
+    <SwiperComponent items={slides} />
     </div>
   );
 };
